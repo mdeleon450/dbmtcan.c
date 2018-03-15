@@ -27,7 +27,7 @@
 
   <meta name="viewport" content="width=device-width">
   
-  <title>dbscn/dbmtcanv17.c at master · vectorniner/dbscn</title>
+  <title>dbscn/dbmtcanv18.c at master · vectorniner/dbscn</title>
     <meta name="description" content="GitHub is where people build software. More than 27 million people use GitHub to discover, fork, and contribute to over 80 million projects.">
   <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
   <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
@@ -37,10 +37,10 @@
     <meta property="og:image" content="https://avatars2.githubusercontent.com/u/7751419?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="vectorniner/dbscn" /><meta property="og:url" content="https://github.com/vectorniner/dbscn" /><meta property="og:description" content="dbscn - multi threaded dbscan" />
 
   <link rel="assets" href="https://assets-cdn.github.com/">
-  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MjU3ODY5NjcwOmM4YmM4NjgxMjZmMjZlYzJkZjAyZDg2NzQzOTcxMmExYTc5MWU3OTA3Y2M5NWY4NDc1ZjgxYmQ5OTg2Njk0ZGY=--f2578eecbe61e4bfe83b170680af6691ebabf3ae">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MjU3ODY5NjcwOmZkODc1ZTkxOTI5NjQ0YWNiMGZhMjVjN2JlMWE4NWUyODE1Y2IzNTM5MWM1OGJlODMwYTc5OWQ1ZjY1MjlmOTg=--97e0fbb69a3bcef197046ce9995151933defd369">
   <meta name="pjax-timeout" content="1000">
   <link rel="sudo-modal" href="/sessions/sudo_modal">
-  <meta name="request-id" content="6695:0D62:E0D642:14AA152:5AA9B7B1" data-pjax-transient>
+  <meta name="request-id" content="6695:0D62:E0EDBF:14AF059:5AA9B819" data-pjax-transient>
   
 
   <meta name="selected-link" value="repo_source" data-pjax-transient>
@@ -50,7 +50,7 @@
   <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
     <meta name="google-analytics" content="UA-3769691-2">
 
-<meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="6695:0D62:E0D642:14AA152:5AA9B7B1" /><meta name="octolytics-dimension-region_edge" content="sea" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-actor-id" content="37351565" /><meta name="octolytics-actor-login" content="mdeleon450" /><meta name="octolytics-actor-hash" content="4efed9692155bbd9be4e23a7374abb4244afa792cf579fed51dc2cdd1c882436" />
+<meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="6695:0D62:E0EDBF:14AF059:5AA9B819" /><meta name="octolytics-dimension-region_edge" content="sea" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-actor-id" content="37351565" /><meta name="octolytics-actor-login" content="mdeleon450" /><meta name="octolytics-actor-hash" content="4efed9692155bbd9be4e23a7374abb4244afa792cf579fed51dc2cdd1c882436" />
 <meta name="hydro-events-url" content="https://github.com/hydro_browser_events" />
 <meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" />
 
@@ -66,7 +66,7 @@
     <meta name="user-login" content="mdeleon450">
 
       <meta name="expected-hostname" content="github.com">
-    <meta name="js-proxy-site-detection-payload" content="MDBjMWRjZjBhYmM2ZTIzMjZhZjYyMTY4NmI3OTcyZDVhM2M2ZDBmNGJmNDhkYWFjMDNhOTg3NjZmNTY0MjE5ZXx7InJlbW90ZV9hZGRyZXNzIjoiMTU1LjEzNS41NS4yMzIiLCJyZXF1ZXN0X2lkIjoiNjY5NTowRDYyOkUwRDY0MjoxNEFBMTUyOjVBQTlCN0IxIiwidGltZXN0YW1wIjoxNTIxMDcyMTA5LCJob3N0IjoiZ2l0aHViLmNvbSJ9">
+    <meta name="js-proxy-site-detection-payload" content="N2ZiNjNjYmUxOTIzNmU1MGFjNjgzNDI1Yzg3OGU5YzA2MDBmZjFkMGQ0MmZhMjFhYzhmYzhkY2IzMGZhZTZiMHx7InJlbW90ZV9hZGRyZXNzIjoiMTU1LjEzNS41NS4yMzIiLCJyZXF1ZXN0X2lkIjoiNjY5NTowRDYyOkUwRURCRjoxNEFGMDU5OjVBQTlCODE5IiwidGltZXN0YW1wIjoxNTIxMDcyMTU3LCJob3N0IjoiZ2l0aHViLmNvbSJ9">
 
     <meta name="enabled-features" content="UNIVERSE_BANNER,FREE_TRIALS,MARKETPLACE_INSIGHTS,MARKETPLACE_INSIGHTS_CONVERSION_PERCENTAGES">
 
@@ -83,7 +83,7 @@
   <meta name="octolytics-dimension-user_id" content="7751419" /><meta name="octolytics-dimension-user_login" content="vectorniner" /><meta name="octolytics-dimension-repository_id" content="56019065" /><meta name="octolytics-dimension-repository_nwo" content="vectorniner/dbscn" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="56019065" /><meta name="octolytics-dimension-repository_network_root_nwo" content="vectorniner/dbscn" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
 
 
-    <link rel="canonical" href="https://github.com/vectorniner/dbscn/blob/master/dbmtcanv17.c" data-pjax-transient>
+    <link rel="canonical" href="https://github.com/vectorniner/dbscn/blob/master/dbmtcanv18.c" data-pjax-transient>
 
 
   <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
@@ -133,7 +133,7 @@
               <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
   <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-site-search-form" data-scoped-search-url="/vectorniner/dbscn/search" data-unscoped-search-url="/search" action="/vectorniner/dbscn/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
     <label class="form-control header-search-wrapper js-chromeless-input-container">
-        <a class="header-search-scope no-underline" href="/vectorniner/dbscn/blob/master/dbmtcanv17.c">This repository</a>
+        <a class="header-search-scope no-underline" href="/vectorniner/dbscn/blob/master/dbmtcanv18.c">This repository</a>
       <input type="text"
         class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
         data-hotkey="s"
@@ -259,7 +259,7 @@
           Settings
         </a></li>
 
-        <li><!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="2X7wla/5JT8ais6QeSfcSgxKi+MfpIoIKNF8ZGvKZhRKMAZgiHcxdTk2U2iNbq++mS6QD8py+kbtlI1qIB9QBA==" />
+        <li><!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="LFZ50dGDhn1lt6tDUT61va04rqDHBY6r3O3tUmJBHce/GI8k9g2SN0YLNruld8ZJOFy1TBLT/uUZqBxcKZQr1w==" />
           <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
             Sign out
           </button>
@@ -271,7 +271,7 @@
 
 
 
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="sr-only right-0" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="x6SE7/rj0K4eAfM+bdS4brYGYv+V62TZ6KC8nFh9hMJU6nIa3W3E5D29bsaZncuaI2J5E0A9FJct5U2SE6iy0g==" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="sr-only right-0" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="HZiUsj2M/IGEtylOywv4E9twSZLpRougr2yfmIdy9SCO1mJHGgLoy6cLtLY/QovnThRSfjyQ++5qKW6WzKfDMA==" />
           <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
             Sign out
           </button>
@@ -309,7 +309,7 @@
 
       <ul class="pagehead-actions">
   <li>
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-autosubmit="true" data-remote="true" class="js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="/IGU1flKHCho+qlyESCuuC/0sVLFWY4CBjKSAv/e6Pi76EbJAMWt3hM4bJYt2H3vrnLXTeDX18k3cisgoOcPxg==" />      <input type="hidden" name="repository_id" id="repository_id" value="56019065" class="form-control" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-autosubmit="true" data-remote="true" class="js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="JhK1JzBMLnSLI7zzPYOLPwpNqcSBfZW5OIBXmdL8uZlhe2c7ycOfgvDheRcBe1hoi8vP26TzzHIJwO67jcVepw==" />      <input type="hidden" name="repository_id" id="repository_id" value="56019065" class="form-control" />
 
         <div class="select-menu js-menu-container js-select-menu">
           <a href="/vectorniner/dbscn/subscription"
@@ -389,7 +389,7 @@
   <li>
     
   <div class="js-toggler-container js-social-container starring-container ">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/vectorniner/dbscn/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="BZRLDDWpd1fSdVUd0Srkf6yprTyJYpZzjaXlWIKbORoTxMSoPPmjXeV1imdf0tGBAooJD/gxXeIK7y6nRJLijg==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/vectorniner/dbscn/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="cv9x/R02f3X71CQkS586BIvhiS++3nc1trSsKz41VFtkr/5ZFGarf8zU+17FZw/6JcItHM+NvKQx/mfU+DyPzw==" />
       <input type="hidden" name="context" value="repository"></input>
       <button
         type="submit"
@@ -404,7 +404,7 @@
           1
         </a>
 </form>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/vectorniner/dbscn/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="c+4uZkbn/HrVMcdG2mtEeOZj4N7lMbV6mnca5Jiesi5dEITO1sQIulM++idbQu4ggdqqI0ch0I5DUES/DS1qGA==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/vectorniner/dbscn/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="K3a2A61BVI6FGfPK5uou4cwcCGVgU0ygI+nNUJQWRBsFiByrPWKgTgMWzqtnw4S5q6VCmMJDKVT6zpMLAaWcLQ==" />
       <input type="hidden" name="context" value="repository"></input>
       <button
         type="submit"
@@ -423,7 +423,7 @@
   </li>
 
   <li>
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="btn-with-count" action="/vectorniner/dbscn/fork" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="m+5ZNVzyDPjAZTgpET//4as6pRbr/ZyZ4zniHjFFvqd0hhCWSEMmsosl7FdIez8r69EvBEI1/GJexZ8aXBPnaw==" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="btn-with-count" action="/vectorniner/dbscn/fork" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="V+w/2IQ52o3WYCu9JPWhEw+bmVPFlT7J10blj91lk9y4hHZ7kIjwx50g/8N9sWHZT3ATQWxdXjJqupiLsDPKEA==" />
             <button
                 type="submit"
                 class="btn btn-sm btn-with-count"
@@ -504,9 +504,9 @@
   <div class="repository-content ">
 
     
-  <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/vectorniner/dbscn/blob/fa6dbca2cbf38b78625f9712838b4d667f34248b/dbmtcanv17.c">Permalink</a>
+  <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/vectorniner/dbscn/blob/fa6dbca2cbf38b78625f9712838b4d667f34248b/dbmtcanv18.c">Permalink</a>
 
-  <!-- blob contrib key: blob_contributors:v21:6b8341aff2118152ccc059435e5fd367 -->
+  <!-- blob contrib key: blob_contributors:v21:e037b4b84d3e54fc767502214b4dab8f -->
 
   <div class="file-navigation">
     
@@ -548,7 +548,7 @@
 
 
             <a class="select-menu-item js-navigation-item js-navigation-open selected"
-               href="/vectorniner/dbscn/blob/master/dbmtcanv17.c"
+               href="/vectorniner/dbscn/blob/master/dbmtcanv18.c"
                data-name="master"
                data-skip-pjax="true"
                rel="nofollow">
@@ -558,7 +558,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/vectorniner/dbscn/blob/vectorniner-patch-1/dbmtcanv17.c"
+               href="/vectorniner/dbscn/blob/vectorniner-patch-1/dbmtcanv18.c"
                data-name="vectorniner-patch-1"
                data-skip-pjax="true"
                rel="nofollow">
@@ -568,7 +568,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/vectorniner/dbscn/blob/vectorniner-patch-2/dbmtcanv17.c"
+               href="/vectorniner/dbscn/blob/vectorniner-patch-2/dbmtcanv18.c"
                data-name="vectorniner-patch-2"
                data-skip-pjax="true"
                rel="nofollow">
@@ -612,12 +612,12 @@
       </clipboard-copy>
     </div>
     <div id="blob-path" class="breadcrumb">
-      <span class="repo-root js-repo-root"><span class="js-path-segment"><a data-pjax="true" href="/vectorniner/dbscn"><span>dbscn</span></a></span></span><span class="separator">/</span><strong class="final-path">dbmtcanv17.c</strong>
+      <span class="repo-root js-repo-root"><span class="js-path-segment"><a data-pjax="true" href="/vectorniner/dbscn"><span>dbscn</span></a></span></span><span class="separator">/</span><strong class="final-path">dbmtcanv18.c</strong>
     </div>
   </div>
 
 
-  <include-fragment src="/vectorniner/dbscn/contributors/master/dbmtcanv17.c" class="commit-tease">
+  <include-fragment src="/vectorniner/dbscn/contributors/master/dbmtcanv18.c" class="commit-tease">
     <div>
       Fetching contributors&hellip;
     </div>
@@ -633,19 +633,19 @@
   <div class="file-actions">
 
     <div class="BtnGroup">
-      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/vectorniner/dbscn/raw/master/dbmtcanv17.c">Raw</a>
-        <a class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b" href="/vectorniner/dbscn/blame/master/dbmtcanv17.c">Blame</a>
-      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/vectorniner/dbscn/commits/master/dbmtcanv17.c">History</a>
+      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/vectorniner/dbscn/raw/master/dbmtcanv18.c">Raw</a>
+        <a class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b" href="/vectorniner/dbscn/blame/master/dbmtcanv18.c">Blame</a>
+      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/vectorniner/dbscn/commits/master/dbmtcanv18.c">History</a>
     </div>
 
 
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/vectorniner/dbscn/edit/master/dbmtcanv17.c" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="xcW9GIJl/jDX3DBDbfByBlSRNJ8Slnw+glFchuocZ5YM3xnE5y5fWbvPVD8Og6rLFXn6wFOxc43bgR3tjO0gAQ==" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/vectorniner/dbscn/edit/master/dbmtcanv18.c" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="Byv3PlilYg9jLdLnJn6eP7uZBL4Hx447laOwhIcvzpRDQ1d4XNPrHOVWtKc1jTqhFUUYQ9SNqRyo6yImcCi/XQ==" />
             <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
               aria-label="Fork this project and edit the file" data-hotkey="e" data-disable-with>
               <svg class="octicon octicon-pencil" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
             </button>
 </form>
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/vectorniner/dbscn/delete/master/dbmtcanv17.c" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="CaC4rO8WHuvGlWdYO7gIe95yFtHYBawLkPYEpFiD7cjZDsNxWfmG0jea0isv97anBl2VdDYY0YJm0YDDHt9VDg==" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/vectorniner/dbscn/delete/master/dbmtcanv18.c" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="BXKFBUg7joxaMQJu4Y4mFgz/odtwbQZ7IFGCSH5ugSaH5BarmiNzCuC96wIFhNSd2kBZrRcWfpI9wup6eWhQsA==" />
           <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
             aria-label="Fork this project and delete the file" data-disable-with>
             <svg class="octicon octicon-trashcan" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
@@ -653,9 +653,9 @@
 </form>  </div>
 
   <div class="file-info">
-      505 lines (444 sloc)
+      576 lines (511 sloc)
       <span class="file-info-divider"></span>
-    14.8 KB
+    17.6 KB
   </div>
 </div>
 
@@ -884,8 +884,7 @@
       </tr>
       <tr>
         <td id="L54" class="blob-num js-line-number" data-line-number="54"></td>
-        <td id="LC54" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC54" class="blob-code blob-code-inner js-file-line"><span class="pl-k">void</span> <span class="pl-en">appendFile</span>(<span class="pl-k">char</span> fileA[<span class="pl-c1">100</span>], <span class="pl-k">char</span> fileB[<span class="pl-c1">100</span>]);</td>
       </tr>
       <tr>
         <td id="L55" class="blob-num js-line-number" data-line-number="55"></td>
@@ -1916,11 +1915,11 @@
       </tr>
       <tr>
         <td id="L307" class="blob-num js-line-number" data-line-number="307"></td>
-        <td id="LC307" class="blob-code blob-code-inner js-file-line">                        <span class="pl-c1">fprintf</span>(fiptr,<span class="pl-s"><span class="pl-pds">&quot;</span>x(<span class="pl-c1">%0.0lf</span>),y(<span class="pl-c1">%0.0lf</span>) -&gt; x&#39;(<span class="pl-c1">%0.0lf</span>),y&#39;(<span class="pl-c1">%0.0lf</span>) = <span class="pl-c1">%lf</span><span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>,x,y,x2,y2,distance);</td>
+        <td id="LC307" class="blob-code blob-code-inner js-file-line">                        <span class="pl-c1">fprintf</span>(fiptr,<span class="pl-s"><span class="pl-pds">&quot;</span>x(<span class="pl-c1">%0.0lf</span>),y(<span class="pl-c1">%0.0lf</span>) -&gt; x_(<span class="pl-c1">%0.0lf</span>),y_(<span class="pl-c1">%0.0lf</span>) = <span class="pl-c1">%lf</span><span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>,x,y,x2,y2,distance);</td>
       </tr>
       <tr>
         <td id="L308" class="blob-num js-line-number" data-line-number="308"></td>
-        <td id="LC308" class="blob-code blob-code-inner js-file-line">                        <span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>x(<span class="pl-c1">%.02lf</span>),y(<span class="pl-c1">%.02lf</span>) -&gt; x&#39;(<span class="pl-c1">%.02lf</span>),y&#39;(<span class="pl-c1">%.02lf</span>) = <span class="pl-c1">%.03lf</span><span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>,x,y,x2,y2,distance);</td>
+        <td id="LC308" class="blob-code blob-code-inner js-file-line">                        <span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>x(<span class="pl-c1">%.02lf</span>),y(<span class="pl-c1">%.02lf</span>) -&gt; x_(<span class="pl-c1">%.02lf</span>),y_(<span class="pl-c1">%.02lf</span>) = <span class="pl-c1">%.03lf</span><span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>,x,y,x2,y2,distance);</td>
       </tr>
       <tr>
         <td id="L309" class="blob-num js-line-number" data-line-number="309"></td>
@@ -2082,237 +2081,236 @@
       </tr>
       <tr>
         <td id="L348" class="blob-num js-line-number" data-line-number="348"></td>
-        <td id="LC348" class="blob-code blob-code-inner js-file-line">	<span class="pl-k">int</span> i,h,hnd=<span class="pl-c1">0</span>;</td>
+        <td id="LC348" class="blob-code blob-code-inner js-file-line">	<span class="pl-k">int</span> i,h,j,hnd=<span class="pl-c1">0</span>;</td>
       </tr>
       <tr>
         <td id="L349" class="blob-num js-line-number" data-line-number="349"></td>
-        <td id="LC349" class="blob-code blob-code-inner js-file-line">	<span class="pl-k">double</span> handoff[<span class="pl-c1">3</span>]={<span class="pl-c1">0</span>};</td>
+        <td id="LC349" class="blob-code blob-code-inner js-file-line">	<span class="pl-k">double</span> p1,p2;</td>
       </tr>
       <tr>
         <td id="L350" class="blob-num js-line-number" data-line-number="350"></td>
-        <td id="LC350" class="blob-code blob-code-inner js-file-line">	<span class="pl-k">char</span> c;</td>
+        <td id="LC350" class="blob-code blob-code-inner js-file-line">	<span class="pl-k">double</span> handoff[<span class="pl-c1">3</span>]={<span class="pl-c1">0</span>};</td>
       </tr>
       <tr>
         <td id="L351" class="blob-num js-line-number" data-line-number="351"></td>
-        <td id="LC351" class="blob-code blob-code-inner js-file-line">	<span class="pl-k">double</span> k,l,clstptsA,tempk, templ, clstptsB;</td>
+        <td id="LC351" class="blob-code blob-code-inner js-file-line">	<span class="pl-k">char</span> c;</td>
       </tr>
       <tr>
         <td id="L352" class="blob-num js-line-number" data-line-number="352"></td>
-        <td id="LC352" class="blob-code blob-code-inner js-file-line">	<span class="pl-k">char</span> clusterc[<span class="pl-c1">100</span>];</td>
+        <td id="LC352" class="blob-code blob-code-inner js-file-line">	<span class="pl-k">double</span> k,l,clstptsA,tempk, templ, clstptsB;</td>
       </tr>
       <tr>
         <td id="L353" class="blob-num js-line-number" data-line-number="353"></td>
-        <td id="LC353" class="blob-code blob-code-inner js-file-line">	<span class="pl-k">char</span> clusterb[<span class="pl-c1">100</span>];</td>
+        <td id="LC353" class="blob-code blob-code-inner js-file-line">	<span class="pl-k">char</span> clusterc[<span class="pl-c1">100</span>];</td>
       </tr>
       <tr>
         <td id="L354" class="blob-num js-line-number" data-line-number="354"></td>
-        <td id="LC354" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">//</span>file format d_dfilename_dd</span></td>
+        <td id="LC354" class="blob-code blob-code-inner js-file-line">	<span class="pl-k">char</span> clusterb[<span class="pl-c1">100</span>];</td>
       </tr>
       <tr>
         <td id="L355" class="blob-num js-line-number" data-line-number="355"></td>
-        <td id="LC355" class="blob-code blob-code-inner js-file-line">		</td>
+        <td id="LC355" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">//</span>file format d_dfilename_dd</span></td>
       </tr>
       <tr>
         <td id="L356" class="blob-num js-line-number" data-line-number="356"></td>
-        <td id="LC356" class="blob-code blob-code-inner js-file-line">	<span class="pl-k">for</span>(h=<span class="pl-c1">0</span>;h&lt;numOfiles;h)</td>
+        <td id="LC356" class="blob-code blob-code-inner js-file-line">		</td>
       </tr>
       <tr>
         <td id="L357" class="blob-num js-line-number" data-line-number="357"></td>
-        <td id="LC357" class="blob-code blob-code-inner js-file-line">	{</td>
+        <td id="LC357" class="blob-code blob-code-inner js-file-line">	<span class="pl-k">for</span>(h=<span class="pl-c1">0</span>;h&lt;numOfiles;h)</td>
       </tr>
       <tr>
         <td id="L358" class="blob-num js-line-number" data-line-number="358"></td>
-        <td id="LC358" class="blob-code blob-code-inner js-file-line">		<span class="pl-c1">strcpy</span>(clusterb,fileNames[h++]);</td>
+        <td id="LC358" class="blob-code blob-code-inner js-file-line">	{</td>
       </tr>
       <tr>
         <td id="L359" class="blob-num js-line-number" data-line-number="359"></td>
-        <td id="LC359" class="blob-code blob-code-inner js-file-line">		<span class="pl-c1">filenames</span>(clusterb,handoff);</td>
+        <td id="LC359" class="blob-code blob-code-inner js-file-line">		<span class="pl-c1">strcpy</span>(clusterb,fileNames[h++]);</td>
       </tr>
       <tr>
         <td id="L360" class="blob-num js-line-number" data-line-number="360"></td>
-        <td id="LC360" class="blob-code blob-code-inner js-file-line">		k = handoff[<span class="pl-c1">0</span>];</td>
+        <td id="LC360" class="blob-code blob-code-inner js-file-line">		<span class="pl-c1">filenames</span>(clusterb,handoff);</td>
       </tr>
       <tr>
         <td id="L361" class="blob-num js-line-number" data-line-number="361"></td>
-        <td id="LC361" class="blob-code blob-code-inner js-file-line">		l = handoff[<span class="pl-c1">1</span>];</td>
+        <td id="LC361" class="blob-code blob-code-inner js-file-line">		k = handoff[<span class="pl-c1">0</span>];</td>
       </tr>
       <tr>
         <td id="L362" class="blob-num js-line-number" data-line-number="362"></td>
-        <td id="LC362" class="blob-code blob-code-inner js-file-line">		clstptsA = handoff[<span class="pl-c1">2</span>];	</td>
+        <td id="LC362" class="blob-code blob-code-inner js-file-line">		l = handoff[<span class="pl-c1">1</span>];</td>
       </tr>
       <tr>
         <td id="L363" class="blob-num js-line-number" data-line-number="363"></td>
-        <td id="LC363" class="blob-code blob-code-inner js-file-line">		<span class="pl-c"><span class="pl-c">//</span>printf(&quot;%s\n&quot;,clusterc);</span></td>
+        <td id="LC363" class="blob-code blob-code-inner js-file-line">		clstptsA = handoff[<span class="pl-c1">2</span>];	</td>
       </tr>
       <tr>
         <td id="L364" class="blob-num js-line-number" data-line-number="364"></td>
-        <td id="LC364" class="blob-code blob-code-inner js-file-line">		<span class="pl-c1">strcpy</span>(clusterc,fileNames[h]);</td>
+        <td id="LC364" class="blob-code blob-code-inner js-file-line">		<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>This <span class="pl-c1">%s</span><span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>,clusterb);</td>
       </tr>
       <tr>
         <td id="L365" class="blob-num js-line-number" data-line-number="365"></td>
-        <td id="LC365" class="blob-code blob-code-inner js-file-line"> 		<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-c1">%s</span><span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>,clusterc);</td>
+        <td id="LC365" class="blob-code blob-code-inner js-file-line">		master = <span class="pl-c1">fopen</span>(clusterb,<span class="pl-s"><span class="pl-pds">&quot;</span>r+<span class="pl-pds">&quot;</span></span>);</td>
       </tr>
       <tr>
         <td id="L366" class="blob-num js-line-number" data-line-number="366"></td>
-        <td id="LC366" class="blob-code blob-code-inner js-file-line">                <span class="pl-c"><span class="pl-c">//</span>retrieve dd_ddcluster and # of points in cluster</span></td>
+        <td id="LC366" class="blob-code blob-code-inner js-file-line">                <span class="pl-k">if</span>(!master)</td>
       </tr>
       <tr>
         <td id="L367" class="blob-num js-line-number" data-line-number="367"></td>
-        <td id="LC367" class="blob-code blob-code-inner js-file-line">		<span class="pl-c1">filenames</span>(clusterc,handoff); </td>
+        <td id="LC367" class="blob-code blob-code-inner js-file-line">                { <span class="pl-c"><span class="pl-c">//</span>if error appending</span></td>
       </tr>
       <tr>
         <td id="L368" class="blob-num js-line-number" data-line-number="368"></td>
-        <td id="LC368" class="blob-code blob-code-inner js-file-line">		tempk = handoff[<span class="pl-c1">0</span>];</td>
+        <td id="LC368" class="blob-code blob-code-inner js-file-line">                        <span class="pl-c1">perror</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>File could not open for reading:<span class="pl-pds">&quot;</span></span>);</td>
       </tr>
       <tr>
         <td id="L369" class="blob-num js-line-number" data-line-number="369"></td>
-        <td id="LC369" class="blob-code blob-code-inner js-file-line">                templ = handoff[<span class="pl-c1">1</span>];</td>
+        <td id="LC369" class="blob-code blob-code-inner js-file-line">                        <span class="pl-c1">exit</span>(<span class="pl-c1">1</span>);</td>
       </tr>
       <tr>
         <td id="L370" class="blob-num js-line-number" data-line-number="370"></td>
-        <td id="LC370" class="blob-code blob-code-inner js-file-line">                clstptsB = handoff[<span class="pl-c1">2</span>];</td>
+        <td id="LC370" class="blob-code blob-code-inner js-file-line">                }</td>
       </tr>
       <tr>
         <td id="L371" class="blob-num js-line-number" data-line-number="371"></td>
-        <td id="LC371" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC371" class="blob-code blob-code-inner js-file-line">		<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>about to start while<span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>);</td>
       </tr>
       <tr>
         <td id="L372" class="blob-num js-line-number" data-line-number="372"></td>
-        <td id="LC372" class="blob-code blob-code-inner js-file-line">		<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>tempk= <span class="pl-c1">%.2lf</span><span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>,tempk);</td>
+        <td id="LC372" class="blob-code blob-code-inner js-file-line">		</td>
       </tr>
       <tr>
         <td id="L373" class="blob-num js-line-number" data-line-number="373"></td>
-        <td id="LC373" class="blob-code blob-code-inner js-file-line">		<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>templ= <span class="pl-c1">%.2lf</span><span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>,templ);</td>
+        <td id="LC373" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">//</span>WE ARE HERE--------&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; while loop does not start?</span></td>
       </tr>
       <tr>
         <td id="L374" class="blob-num js-line-number" data-line-number="374"></td>
-        <td id="LC374" class="blob-code blob-code-inner js-file-line">		<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>clstpts= <span class="pl-c1">%.2lf</span><span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>,clstptsB);</td>
-      </tr>
-      <tr>
-        <td id="L375" class="blob-num js-line-number" data-line-number="375"></td>
-        <td id="LC375" class="blob-code blob-code-inner js-file-line">			</td>
-      </tr>
-      <tr>
-        <td id="L376" class="blob-num js-line-number" data-line-number="376"></td>
-        <td id="LC376" class="blob-code blob-code-inner js-file-line">		master = <span class="pl-c1">fopen</span>(clusterb,<span class="pl-s"><span class="pl-pds">&quot;</span>a<span class="pl-pds">&quot;</span></span>);</td>
-      </tr>
-      <tr>
-        <td id="L377" class="blob-num js-line-number" data-line-number="377"></td>
-        <td id="LC377" class="blob-code blob-code-inner js-file-line">		<span class="pl-k">if</span>(!master)</td>
-      </tr>
-      <tr>
-        <td id="L378" class="blob-num js-line-number" data-line-number="378"></td>
-        <td id="LC378" class="blob-code blob-code-inner js-file-line">        	{ <span class="pl-c"><span class="pl-c">//</span>if error appending</span></td>
-      </tr>
-      <tr>
-        <td id="L379" class="blob-num js-line-number" data-line-number="379"></td>
-        <td id="LC379" class="blob-code blob-code-inner js-file-line">                	<span class="pl-c1">perror</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>File could not open for writing:<span class="pl-pds">&quot;</span></span>);</td>
-      </tr>
-      <tr>
-        <td id="L380" class="blob-num js-line-number" data-line-number="380"></td>
-        <td id="LC380" class="blob-code blob-code-inner js-file-line">                	<span class="pl-c1">exit</span>(<span class="pl-c1">1</span>);</td>
-      </tr>
-      <tr>
-        <td id="L381" class="blob-num js-line-number" data-line-number="381"></td>
-        <td id="LC381" class="blob-code blob-code-inner js-file-line">        	}</td>
-      </tr>
-      <tr>
-        <td id="L382" class="blob-num js-line-number" data-line-number="382"></td>
-        <td id="LC382" class="blob-code blob-code-inner js-file-line">		slave = <span class="pl-c1">fopen</span>(clusterc,<span class="pl-s"><span class="pl-pds">&quot;</span>r<span class="pl-pds">&quot;</span></span>);</td>
-      </tr>
-      <tr>
-        <td id="L383" class="blob-num js-line-number" data-line-number="383"></td>
-        <td id="LC383" class="blob-code blob-code-inner js-file-line">                <span class="pl-k">if</span>(!slave)</td>
-      </tr>
-      <tr>
-        <td id="L384" class="blob-num js-line-number" data-line-number="384"></td>
-        <td id="LC384" class="blob-code blob-code-inner js-file-line">                { <span class="pl-c"><span class="pl-c">//</span>if error appending</span></td>
-      </tr>
-      <tr>
-        <td id="L385" class="blob-num js-line-number" data-line-number="385"></td>
-        <td id="LC385" class="blob-code blob-code-inner js-file-line">                        <span class="pl-c1">perror</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>File could not open for writing:<span class="pl-pds">&quot;</span></span>);</td>
-      </tr>
-      <tr>
-        <td id="L386" class="blob-num js-line-number" data-line-number="386"></td>
-        <td id="LC386" class="blob-code blob-code-inner js-file-line">                        <span class="pl-c1">exit</span>(<span class="pl-c1">1</span>);</td>
-      </tr>
-      <tr>
-        <td id="L387" class="blob-num js-line-number" data-line-number="387"></td>
-        <td id="LC387" class="blob-code blob-code-inner js-file-line">                }</td>
-      </tr>
-      <tr>
-        <td id="L388" class="blob-num js-line-number" data-line-number="388"></td>
-        <td id="LC388" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">//</span>WE ARE HERE!!		</span></td>
-      </tr>
-      <tr>
-        <td id="L389" class="blob-num js-line-number" data-line-number="389"></td>
-        <td id="LC389" class="blob-code blob-code-inner js-file-line">		<span class="pl-c"><span class="pl-c">//</span>need to go to next file and compare name to see</span></td>
-      </tr>
-      <tr>
-        <td id="L390" class="blob-num js-line-number" data-line-number="390"></td>
-        <td id="LC390" class="blob-code blob-code-inner js-file-line">		<span class="pl-c"><span class="pl-c">//</span>if point is in file name.</span></td>
-      </tr>
-      <tr>
-        <td id="L391" class="blob-num js-line-number" data-line-number="391"></td>
-        <td id="LC391" class="blob-code blob-code-inner js-file-line">	</td>
-      </tr>
-      <tr>
-        <td id="L392" class="blob-num js-line-number" data-line-number="392"></td>
-        <td id="LC392" class="blob-code blob-code-inner js-file-line">		tempk=<span class="pl-c1">0</span>;</td>
-      </tr>
-      <tr>
-        <td id="L393" class="blob-num js-line-number" data-line-number="393"></td>
-        <td id="LC393" class="blob-code blob-code-inner js-file-line">		templ=<span class="pl-c1">0</span>;</td>
-      </tr>
-      <tr>
-        <td id="L394" class="blob-num js-line-number" data-line-number="394"></td>
-        <td id="LC394" class="blob-code blob-code-inner js-file-line">		clstptsB=<span class="pl-c1">0</span>;</td>
-      </tr>
-      <tr>
-        <td id="L395" class="blob-num js-line-number" data-line-number="395"></td>
-        <td id="LC395" class="blob-code blob-code-inner js-file-line">	}</td>
-      </tr>
-      <tr>
-        <td id="L396" class="blob-num js-line-number" data-line-number="396"></td>
-        <td id="LC396" class="blob-code blob-code-inner js-file-line">}</td>
-      </tr>
-      <tr>
-        <td id="L397" class="blob-num js-line-number" data-line-number="397"></td>
-        <td id="LC397" class="blob-code blob-code-inner js-file-line">
+        <td id="LC374" class="blob-code blob-code-inner js-file-line">
 </td>
       </tr>
       <tr>
+        <td id="L375" class="blob-num js-line-number" data-line-number="375"></td>
+        <td id="LC375" class="blob-code blob-code-inner js-file-line">		<span class="pl-k">while</span>((c=<span class="pl-c1">fgetc</span>(master)) != EOF)</td>
+      </tr>
+      <tr>
+        <td id="L376" class="blob-num js-line-number" data-line-number="376"></td>
+        <td id="LC376" class="blob-code blob-code-inner js-file-line">		{</td>
+      </tr>
+      <tr>
+        <td id="L377" class="blob-num js-line-number" data-line-number="377"></td>
+        <td id="LC377" class="blob-code blob-code-inner js-file-line">                	<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>start = <span class="pl-c1">%c</span><span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>,c);</td>
+      </tr>
+      <tr>
+        <td id="L378" class="blob-num js-line-number" data-line-number="378"></td>
+        <td id="LC378" class="blob-code blob-code-inner js-file-line">			<span class="pl-k">if</span>(c==<span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\n</span><span class="pl-pds">&#39;</span></span>)</td>
+      </tr>
+      <tr>
+        <td id="L379" class="blob-num js-line-number" data-line-number="379"></td>
+        <td id="LC379" class="blob-code blob-code-inner js-file-line">                        {</td>
+      </tr>
+      <tr>
+        <td id="L380" class="blob-num js-line-number" data-line-number="380"></td>
+        <td id="LC380" class="blob-code blob-code-inner js-file-line">                	        p1 = <span class="pl-c1">0</span>;</td>
+      </tr>
+      <tr>
+        <td id="L381" class="blob-num js-line-number" data-line-number="381"></td>
+        <td id="LC381" class="blob-code blob-code-inner js-file-line">                        	p2 = <span class="pl-c1">0</span>;</td>
+      </tr>
+      <tr>
+        <td id="L382" class="blob-num js-line-number" data-line-number="382"></td>
+        <td id="LC382" class="blob-code blob-code-inner js-file-line">                        }</td>
+      </tr>
+      <tr>
+        <td id="L383" class="blob-num js-line-number" data-line-number="383"></td>
+        <td id="LC383" class="blob-code blob-code-inner js-file-line">                        <span class="pl-k">else</span> <span class="pl-k">if</span>(c==<span class="pl-s"><span class="pl-pds">&#39;</span>x<span class="pl-pds">&#39;</span></span>)</td>
+      </tr>
+      <tr>
+        <td id="L384" class="blob-num js-line-number" data-line-number="384"></td>
+        <td id="LC384" class="blob-code blob-code-inner js-file-line">                        {</td>
+      </tr>
+      <tr>
+        <td id="L385" class="blob-num js-line-number" data-line-number="385"></td>
+        <td id="LC385" class="blob-code blob-code-inner js-file-line">                        	<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>step 1 = <span class="pl-c1">%c</span><span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>,c);</td>
+      </tr>
+      <tr>
+        <td id="L386" class="blob-num js-line-number" data-line-number="386"></td>
+        <td id="LC386" class="blob-code blob-code-inner js-file-line">				c=<span class="pl-c1">fgetc</span>(master);</td>
+      </tr>
+      <tr>
+        <td id="L387" class="blob-num js-line-number" data-line-number="387"></td>
+        <td id="LC387" class="blob-code blob-code-inner js-file-line">                                <span class="pl-k">if</span> (c == <span class="pl-s"><span class="pl-pds">&#39;</span>_<span class="pl-pds">&#39;</span></span>)</td>
+      </tr>
+      <tr>
+        <td id="L388" class="blob-num js-line-number" data-line-number="388"></td>
+        <td id="LC388" class="blob-code blob-code-inner js-file-line">                                {</td>
+      </tr>
+      <tr>
+        <td id="L389" class="blob-num js-line-number" data-line-number="389"></td>
+        <td id="LC389" class="blob-code blob-code-inner js-file-line">                                	c=<span class="pl-c1">fgetc</span>(master);</td>
+      </tr>
+      <tr>
+        <td id="L390" class="blob-num js-line-number" data-line-number="390"></td>
+        <td id="LC390" class="blob-code blob-code-inner js-file-line">					c = <span class="pl-c1">fgetc</span>(master);</td>
+      </tr>
+      <tr>
+        <td id="L391" class="blob-num js-line-number" data-line-number="391"></td>
+        <td id="LC391" class="blob-code blob-code-inner js-file-line">                                        <span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>step 2 = <span class="pl-c1">%c</span><span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>,c);</td>
+      </tr>
+      <tr>
+        <td id="L392" class="blob-num js-line-number" data-line-number="392"></td>
+        <td id="LC392" class="blob-code blob-code-inner js-file-line">					p1 = (<span class="pl-k">double</span>)c - <span class="pl-s"><span class="pl-pds">&#39;</span>0<span class="pl-pds">&#39;</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L393" class="blob-num js-line-number" data-line-number="393"></td>
+        <td id="LC393" class="blob-code blob-code-inner js-file-line">                                        c=<span class="pl-c1">fgetc</span>(master);</td>
+      </tr>
+      <tr>
+        <td id="L394" class="blob-num js-line-number" data-line-number="394"></td>
+        <td id="LC394" class="blob-code blob-code-inner js-file-line">                                        <span class="pl-k">if</span> (<span class="pl-c1">isdigit</span>(c))</td>
+      </tr>
+      <tr>
+        <td id="L395" class="blob-num js-line-number" data-line-number="395"></td>
+        <td id="LC395" class="blob-code blob-code-inner js-file-line">                                        {</td>
+      </tr>
+      <tr>
+        <td id="L396" class="blob-num js-line-number" data-line-number="396"></td>
+        <td id="LC396" class="blob-code blob-code-inner js-file-line">                                        	p1 = <span class="pl-c1">10</span>*p1 + ((<span class="pl-k">double</span>)c - <span class="pl-s"><span class="pl-pds">&#39;</span>0<span class="pl-pds">&#39;</span></span>);</td>
+      </tr>
+      <tr>
+        <td id="L397" class="blob-num js-line-number" data-line-number="397"></td>
+        <td id="LC397" class="blob-code blob-code-inner js-file-line">                                        }</td>
+      </tr>
+      <tr>
         <td id="L398" class="blob-num js-line-number" data-line-number="398"></td>
-        <td id="LC398" class="blob-code blob-code-inner js-file-line"><span class="pl-k">void</span> <span class="pl-en">filenames</span>(<span class="pl-k">char</span> cluster[],<span class="pl-k">double</span> *values)</td>
+        <td id="LC398" class="blob-code blob-code-inner js-file-line">                                                <span class="pl-c"><span class="pl-c">//</span>need recursion to go higher than double digits</span></td>
       </tr>
       <tr>
         <td id="L399" class="blob-num js-line-number" data-line-number="399"></td>
-        <td id="LC399" class="blob-code blob-code-inner js-file-line">{</td>
+        <td id="LC399" class="blob-code blob-code-inner js-file-line">                                }</td>
       </tr>
       <tr>
         <td id="L400" class="blob-num js-line-number" data-line-number="400"></td>
-        <td id="LC400" class="blob-code blob-code-inner js-file-line">	<span class="pl-k">int</span> j=<span class="pl-c1">0</span>,b=<span class="pl-c1">0</span>;</td>
+        <td id="LC400" class="blob-code blob-code-inner js-file-line">			}</td>
       </tr>
       <tr>
         <td id="L401" class="blob-num js-line-number" data-line-number="401"></td>
-        <td id="LC401" class="blob-code blob-code-inner js-file-line">	<span class="pl-k">double</span> templ=<span class="pl-c1">0</span>, tempk=<span class="pl-c1">0</span>, clstpts=<span class="pl-c1">0</span>;</td>
+        <td id="LC401" class="blob-code blob-code-inner js-file-line">                        <span class="pl-k">else</span> <span class="pl-k">if</span>(c==<span class="pl-s"><span class="pl-pds">&#39;</span>y<span class="pl-pds">&#39;</span></span>)</td>
       </tr>
       <tr>
         <td id="L402" class="blob-num js-line-number" data-line-number="402"></td>
-        <td id="LC402" class="blob-code blob-code-inner js-file-line">	<span class="pl-k">char</span> c;</td>
+        <td id="LC402" class="blob-code blob-code-inner js-file-line">                        {</td>
       </tr>
       <tr>
         <td id="L403" class="blob-num js-line-number" data-line-number="403"></td>
-        <td id="LC403" class="blob-code blob-code-inner js-file-line">	<span class="pl-k">while</span>( (c= cluster[j]) != <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\0</span><span class="pl-pds">&#39;</span></span>)</td>
+        <td id="LC403" class="blob-code blob-code-inner js-file-line">                        	c=<span class="pl-c1">fgetc</span>(master);</td>
       </tr>
       <tr>
         <td id="L404" class="blob-num js-line-number" data-line-number="404"></td>
-        <td id="LC404" class="blob-code blob-code-inner js-file-line">                        {</td>
+        <td id="LC404" class="blob-code blob-code-inner js-file-line">                                <span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>step 3 = <span class="pl-c1">%c</span><span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>,c);</td>
       </tr>
       <tr>
         <td id="L405" class="blob-num js-line-number" data-line-number="405"></td>
-        <td id="LC405" class="blob-code blob-code-inner js-file-line">                                <span class="pl-k">if</span>(c==<span class="pl-s"><span class="pl-pds">&#39;</span>_<span class="pl-pds">&#39;</span></span>)</td>
+        <td id="LC405" class="blob-code blob-code-inner js-file-line">				<span class="pl-k">if</span> (c == <span class="pl-s"><span class="pl-pds">&#39;</span>_<span class="pl-pds">&#39;</span></span>)</td>
       </tr>
       <tr>
         <td id="L406" class="blob-num js-line-number" data-line-number="406"></td>
@@ -2320,155 +2318,158 @@
       </tr>
       <tr>
         <td id="L407" class="blob-num js-line-number" data-line-number="407"></td>
-        <td id="LC407" class="blob-code blob-code-inner js-file-line">                                        b++;</td>
+        <td id="LC407" class="blob-code blob-code-inner js-file-line">                                	c = <span class="pl-c1">fgetc</span>(master);</td>
       </tr>
       <tr>
         <td id="L408" class="blob-num js-line-number" data-line-number="408"></td>
-        <td id="LC408" class="blob-code blob-code-inner js-file-line">                                        j++;</td>
+        <td id="LC408" class="blob-code blob-code-inner js-file-line">                                        c = <span class="pl-c1">fgetc</span>(master);</td>
       </tr>
       <tr>
         <td id="L409" class="blob-num js-line-number" data-line-number="409"></td>
-        <td id="LC409" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">//</span>                                      printf(&quot;j=_ %d\n&quot;,j);           //debugging</span></td>
+        <td id="LC409" class="blob-code blob-code-inner js-file-line">					<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>step 4 = <span class="pl-c1">%c</span><span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>,c);</td>
       </tr>
       <tr>
         <td id="L410" class="blob-num js-line-number" data-line-number="410"></td>
-        <td id="LC410" class="blob-code blob-code-inner js-file-line">                                }</td>
+        <td id="LC410" class="blob-code blob-code-inner js-file-line">					p2 = (<span class="pl-k">double</span>)c - <span class="pl-s"><span class="pl-pds">&#39;</span>0<span class="pl-pds">&#39;</span></span>;</td>
       </tr>
       <tr>
         <td id="L411" class="blob-num js-line-number" data-line-number="411"></td>
-        <td id="LC411" class="blob-code blob-code-inner js-file-line">                                <span class="pl-k">else</span> <span class="pl-k">if</span>(<span class="pl-c1">isalpha</span>(c))</td>
+        <td id="LC411" class="blob-code blob-code-inner js-file-line">                                        c=<span class="pl-c1">fgetc</span>(master);</td>
       </tr>
       <tr>
         <td id="L412" class="blob-num js-line-number" data-line-number="412"></td>
-        <td id="LC412" class="blob-code blob-code-inner js-file-line">                                {</td>
+        <td id="LC412" class="blob-code blob-code-inner js-file-line">                                        <span class="pl-k">if</span> (<span class="pl-c1">isdigit</span>(c))</td>
       </tr>
       <tr>
         <td id="L413" class="blob-num js-line-number" data-line-number="413"></td>
-        <td id="LC413" class="blob-code blob-code-inner js-file-line">                                        j++;</td>
+        <td id="LC413" class="blob-code blob-code-inner js-file-line">                                        {</td>
       </tr>
       <tr>
         <td id="L414" class="blob-num js-line-number" data-line-number="414"></td>
-        <td id="LC414" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">//</span>                                      printf(&quot;j= %d\n&quot;,j);            //debugging</span></td>
+        <td id="LC414" class="blob-code blob-code-inner js-file-line">                                        	p2 = <span class="pl-c1">10</span>*p2 + ((<span class="pl-k">double</span>)c - <span class="pl-s"><span class="pl-pds">&#39;</span>0<span class="pl-pds">&#39;</span></span>);</td>
       </tr>
       <tr>
         <td id="L415" class="blob-num js-line-number" data-line-number="415"></td>
-        <td id="LC415" class="blob-code blob-code-inner js-file-line">                                }</td>
+        <td id="LC415" class="blob-code blob-code-inner js-file-line">                                        }</td>
       </tr>
       <tr>
         <td id="L416" class="blob-num js-line-number" data-line-number="416"></td>
-        <td id="LC416" class="blob-code blob-code-inner js-file-line">                                <span class="pl-k">else</span> <span class="pl-k">if</span>(<span class="pl-c1">isdigit</span>(c))</td>
+        <td id="LC416" class="blob-code blob-code-inner js-file-line">                                                <span class="pl-c"><span class="pl-c">//</span>need recursion to go higher than double digits</span></td>
       </tr>
       <tr>
         <td id="L417" class="blob-num js-line-number" data-line-number="417"></td>
-        <td id="LC417" class="blob-code blob-code-inner js-file-line">                                {</td>
+        <td id="LC417" class="blob-code blob-code-inner js-file-line">				}</td>
       </tr>
       <tr>
         <td id="L418" class="blob-num js-line-number" data-line-number="418"></td>
-        <td id="LC418" class="blob-code blob-code-inner js-file-line">                                        <span class="pl-k">if</span>(b==<span class="pl-c1">0</span>)</td>
+        <td id="LC418" class="blob-code blob-code-inner js-file-line">				<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>p1=<span class="pl-c1">%f</span> p2=<span class="pl-c1">%f</span><span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>,p1,p2);</td>
       </tr>
       <tr>
         <td id="L419" class="blob-num js-line-number" data-line-number="419"></td>
-        <td id="LC419" class="blob-code blob-code-inner js-file-line">                                        {</td>
+        <td id="LC419" class="blob-code blob-code-inner js-file-line">				<span class="pl-k">for</span>(j=h;j&lt;(numOfiles-h);j++)</td>
       </tr>
       <tr>
         <td id="L420" class="blob-num js-line-number" data-line-number="420"></td>
-        <td id="LC420" class="blob-code blob-code-inner js-file-line">                                                tempk= (<span class="pl-k">double</span>)c - <span class="pl-s"><span class="pl-pds">&#39;</span>0<span class="pl-pds">&#39;</span></span>;</td>
+        <td id="LC420" class="blob-code blob-code-inner js-file-line">                		{</td>
       </tr>
       <tr>
         <td id="L421" class="blob-num js-line-number" data-line-number="421"></td>
-        <td id="LC421" class="blob-code blob-code-inner js-file-line">                                                <span class="pl-c"><span class="pl-c">//</span>need recursion here xx.xx</span></td>
+        <td id="LC421" class="blob-code blob-code-inner js-file-line">                        		<span class="pl-c1">strcpy</span>(clusterc,fileNames[j]);</td>
       </tr>
       <tr>
         <td id="L422" class="blob-num js-line-number" data-line-number="422"></td>
-        <td id="LC422" class="blob-code blob-code-inner js-file-line">                                                <span class="pl-k">while</span> ((c= cluster[++j]) != <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\0</span><span class="pl-pds">&#39;</span></span>)</td>
+        <td id="LC422" class="blob-code blob-code-inner js-file-line">                        		<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-c1">%s</span><span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>,clusterc);</td>
       </tr>
       <tr>
         <td id="L423" class="blob-num js-line-number" data-line-number="423"></td>
-        <td id="LC423" class="blob-code blob-code-inner js-file-line">                                                {</td>
+        <td id="LC423" class="blob-code blob-code-inner js-file-line">                        		<span class="pl-c"><span class="pl-c">//</span>retrieve dd_ddcluster and # of points in cluster</span></td>
       </tr>
       <tr>
         <td id="L424" class="blob-num js-line-number" data-line-number="424"></td>
-        <td id="LC424" class="blob-code blob-code-inner js-file-line">                                                        <span class="pl-k">if</span>(c==<span class="pl-s"><span class="pl-pds">&#39;</span>_<span class="pl-pds">&#39;</span></span>)</td>
+        <td id="LC424" class="blob-code blob-code-inner js-file-line">                        		<span class="pl-c1">filenames</span>(clusterc,handoff);</td>
       </tr>
       <tr>
         <td id="L425" class="blob-num js-line-number" data-line-number="425"></td>
-        <td id="LC425" class="blob-code blob-code-inner js-file-line">                                                        {</td>
+        <td id="LC425" class="blob-code blob-code-inner js-file-line">                        		tempk = handoff[<span class="pl-c1">0</span>];</td>
       </tr>
       <tr>
         <td id="L426" class="blob-num js-line-number" data-line-number="426"></td>
-        <td id="LC426" class="blob-code blob-code-inner js-file-line">                                                                b++;</td>
+        <td id="LC426" class="blob-code blob-code-inner js-file-line">                        		templ = handoff[<span class="pl-c1">1</span>];</td>
       </tr>
       <tr>
         <td id="L427" class="blob-num js-line-number" data-line-number="427"></td>
-        <td id="LC427" class="blob-code blob-code-inner js-file-line">                                                                j++;</td>
+        <td id="LC427" class="blob-code blob-code-inner js-file-line">                        		clstptsB = handoff[<span class="pl-c1">2</span>];</td>
       </tr>
       <tr>
         <td id="L428" class="blob-num js-line-number" data-line-number="428"></td>
-        <td id="LC428" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">//</span>                                                              printf(&quot;j=__ %d b= %d\n&quot;,j,b);          //debugging</span></td>
+        <td id="LC428" class="blob-code blob-code-inner js-file-line">
+</td>
       </tr>
       <tr>
         <td id="L429" class="blob-num js-line-number" data-line-number="429"></td>
-        <td id="LC429" class="blob-code blob-code-inner js-file-line">                                                                <span class="pl-k">break</span>;</td>
+        <td id="LC429" class="blob-code blob-code-inner js-file-line">                        		<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>tempk= <span class="pl-c1">%.2lf</span><span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>,tempk);</td>
       </tr>
       <tr>
         <td id="L430" class="blob-num js-line-number" data-line-number="430"></td>
-        <td id="LC430" class="blob-code blob-code-inner js-file-line">                                                        }</td>
+        <td id="LC430" class="blob-code blob-code-inner js-file-line">                        		<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>templ= <span class="pl-c1">%.2lf</span><span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>,templ);</td>
       </tr>
       <tr>
         <td id="L431" class="blob-num js-line-number" data-line-number="431"></td>
-        <td id="LC431" class="blob-code blob-code-inner js-file-line">                                                        <span class="pl-k">else</span> <span class="pl-k">if</span>(<span class="pl-c1">isalpha</span>(c))</td>
+        <td id="LC431" class="blob-code blob-code-inner js-file-line">                        		<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>clstpts= <span class="pl-c1">%.2lf</span><span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>,clstptsB);</td>
       </tr>
       <tr>
         <td id="L432" class="blob-num js-line-number" data-line-number="432"></td>
-        <td id="LC432" class="blob-code blob-code-inner js-file-line">                                                        {</td>
+        <td id="LC432" class="blob-code blob-code-inner js-file-line">
+</td>
       </tr>
       <tr>
         <td id="L433" class="blob-num js-line-number" data-line-number="433"></td>
-        <td id="LC433" class="blob-code blob-code-inner js-file-line">                                                                <span class="pl-c1">puts</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>wrong file format-&gt; dd_ddfilename_dd<span class="pl-pds">&quot;</span></span>);</td>
+        <td id="LC433" class="blob-code blob-code-inner js-file-line">                        		<span class="pl-c"><span class="pl-c">//</span>need to go to next file and compare name to see</span></td>
       </tr>
       <tr>
         <td id="L434" class="blob-num js-line-number" data-line-number="434"></td>
-        <td id="LC434" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">//</span>                                                              printf(&quot;b= %d\n&quot;,b);            //debugging</span></td>
+        <td id="LC434" class="blob-code blob-code-inner js-file-line">                        		<span class="pl-c"><span class="pl-c">//</span>if point is in file name.</span></td>
       </tr>
       <tr>
         <td id="L435" class="blob-num js-line-number" data-line-number="435"></td>
-        <td id="LC435" class="blob-code blob-code-inner js-file-line">                                                                <span class="pl-k">break</span>;</td>
+        <td id="LC435" class="blob-code blob-code-inner js-file-line">
+</td>
       </tr>
       <tr>
         <td id="L436" class="blob-num js-line-number" data-line-number="436"></td>
-        <td id="LC436" class="blob-code blob-code-inner js-file-line">                                                        }</td>
+        <td id="LC436" class="blob-code blob-code-inner js-file-line">                        		tempk=<span class="pl-c1">0</span>;</td>
       </tr>
       <tr>
         <td id="L437" class="blob-num js-line-number" data-line-number="437"></td>
-        <td id="LC437" class="blob-code blob-code-inner js-file-line">                                                        <span class="pl-k">else</span> <span class="pl-k">if</span>(<span class="pl-c1">isdigit</span>(c))</td>
+        <td id="LC437" class="blob-code blob-code-inner js-file-line">                        		templ=<span class="pl-c1">0</span>;</td>
       </tr>
       <tr>
         <td id="L438" class="blob-num js-line-number" data-line-number="438"></td>
-        <td id="LC438" class="blob-code blob-code-inner js-file-line">                                                        {</td>
+        <td id="LC438" class="blob-code blob-code-inner js-file-line">                        		clstptsB=<span class="pl-c1">0</span>;</td>
       </tr>
       <tr>
         <td id="L439" class="blob-num js-line-number" data-line-number="439"></td>
-        <td id="LC439" class="blob-code blob-code-inner js-file-line">                                                                tempk= tempk*<span class="pl-c1">10</span>;</td>
+        <td id="LC439" class="blob-code blob-code-inner js-file-line">                			</td>
       </tr>
       <tr>
         <td id="L440" class="blob-num js-line-number" data-line-number="440"></td>
-        <td id="LC440" class="blob-code blob-code-inner js-file-line">                                                                tempk= tempk + ((<span class="pl-k">double</span>)c - <span class="pl-s"><span class="pl-pds">&#39;</span>0<span class="pl-pds">&#39;</span></span>);</td>
+        <td id="LC440" class="blob-code blob-code-inner js-file-line">                                	<span class="pl-k">if</span>((p1 == tempk) &amp;&amp; (p2 == templ))</td>
       </tr>
       <tr>
         <td id="L441" class="blob-num js-line-number" data-line-number="441"></td>
-        <td id="LC441" class="blob-code blob-code-inner js-file-line">                                                        }</td>
+        <td id="LC441" class="blob-code blob-code-inner js-file-line">                                	{</td>
       </tr>
       <tr>
         <td id="L442" class="blob-num js-line-number" data-line-number="442"></td>
-        <td id="LC442" class="blob-code blob-code-inner js-file-line">                                                        <span class="pl-k">else</span></td>
+        <td id="LC442" class="blob-code blob-code-inner js-file-line">                                	<span class="pl-c"><span class="pl-c">//</span>	appendFile(clusterb,clusterc);</span></td>
       </tr>
       <tr>
         <td id="L443" class="blob-num js-line-number" data-line-number="443"></td>
-        <td id="LC443" class="blob-code blob-code-inner js-file-line">                                                                <span class="pl-k">break</span>;</td>
+        <td id="LC443" class="blob-code blob-code-inner js-file-line">                                	}</td>
       </tr>
       <tr>
         <td id="L444" class="blob-num js-line-number" data-line-number="444"></td>
-        <td id="LC444" class="blob-code blob-code-inner js-file-line">                                                }</td>
+        <td id="LC444" class="blob-code blob-code-inner js-file-line">				}</td>
       </tr>
       <tr>
         <td id="L445" class="blob-num js-line-number" data-line-number="445"></td>
@@ -2477,163 +2478,164 @@
       </tr>
       <tr>
         <td id="L446" class="blob-num js-line-number" data-line-number="446"></td>
-        <td id="LC446" class="blob-code blob-code-inner js-file-line">                                        }</td>
+        <td id="LC446" class="blob-code blob-code-inner js-file-line">			}</td>
       </tr>
       <tr>
         <td id="L447" class="blob-num js-line-number" data-line-number="447"></td>
-        <td id="LC447" class="blob-code blob-code-inner js-file-line">                                        <span class="pl-k">else</span> <span class="pl-k">if</span>(b==<span class="pl-c1">1</span>)</td>
+        <td id="LC447" class="blob-code blob-code-inner js-file-line">                        <span class="pl-k">else</span></td>
       </tr>
       <tr>
         <td id="L448" class="blob-num js-line-number" data-line-number="448"></td>
-        <td id="LC448" class="blob-code blob-code-inner js-file-line">                                        {</td>
+        <td id="LC448" class="blob-code blob-code-inner js-file-line">                        {</td>
       </tr>
       <tr>
         <td id="L449" class="blob-num js-line-number" data-line-number="449"></td>
-        <td id="LC449" class="blob-code blob-code-inner js-file-line">						templ= (<span class="pl-k">double</span>)c - <span class="pl-s"><span class="pl-pds">&#39;</span>0<span class="pl-pds">&#39;</span></span>;</td>
+        <td id="LC449" class="blob-code blob-code-inner js-file-line">                        	<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>step else = <span class="pl-c1">%c</span><span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>,c);</td>
       </tr>
       <tr>
         <td id="L450" class="blob-num js-line-number" data-line-number="450"></td>
-        <td id="LC450" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">//</span>                                              printf(&quot;templ= %.2lf\n&quot;,templ);         //debugging</span></td>
+        <td id="LC450" class="blob-code blob-code-inner js-file-line">                        }</td>
       </tr>
       <tr>
         <td id="L451" class="blob-num js-line-number" data-line-number="451"></td>
-        <td id="LC451" class="blob-code blob-code-inner js-file-line">                                                <span class="pl-c"><span class="pl-c">//</span>need recursion here xx.xx</span></td>
+        <td id="LC451" class="blob-code blob-code-inner js-file-line">		}		</td>
       </tr>
       <tr>
         <td id="L452" class="blob-num js-line-number" data-line-number="452"></td>
-        <td id="LC452" class="blob-code blob-code-inner js-file-line">                                                <span class="pl-k">while</span> ((c= cluster[++j]) != <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\0</span><span class="pl-pds">&#39;</span></span>)</td>
+        <td id="LC452" class="blob-code blob-code-inner js-file-line">	}</td>
       </tr>
       <tr>
         <td id="L453" class="blob-num js-line-number" data-line-number="453"></td>
-        <td id="LC453" class="blob-code blob-code-inner js-file-line">                                                {</td>
+        <td id="LC453" class="blob-code blob-code-inner js-file-line">}</td>
       </tr>
       <tr>
         <td id="L454" class="blob-num js-line-number" data-line-number="454"></td>
-        <td id="LC454" class="blob-code blob-code-inner js-file-line">                                                        <span class="pl-k">if</span>(<span class="pl-c1">isalpha</span>(c))</td>
+        <td id="LC454" class="blob-code blob-code-inner js-file-line">
+</td>
       </tr>
       <tr>
         <td id="L455" class="blob-num js-line-number" data-line-number="455"></td>
-        <td id="LC455" class="blob-code blob-code-inner js-file-line">                                                        {</td>
+        <td id="LC455" class="blob-code blob-code-inner js-file-line"><span class="pl-k">void</span> <span class="pl-en">filenames</span>(<span class="pl-k">char</span> cluster[],<span class="pl-k">double</span> *values)</td>
       </tr>
       <tr>
         <td id="L456" class="blob-num js-line-number" data-line-number="456"></td>
-        <td id="LC456" class="blob-code blob-code-inner js-file-line">                                                                <span class="pl-k">break</span>;</td>
+        <td id="LC456" class="blob-code blob-code-inner js-file-line">{</td>
       </tr>
       <tr>
         <td id="L457" class="blob-num js-line-number" data-line-number="457"></td>
-        <td id="LC457" class="blob-code blob-code-inner js-file-line">                                                        }</td>
+        <td id="LC457" class="blob-code blob-code-inner js-file-line">	<span class="pl-k">int</span> j=<span class="pl-c1">0</span>,b=<span class="pl-c1">0</span>;</td>
       </tr>
       <tr>
         <td id="L458" class="blob-num js-line-number" data-line-number="458"></td>
-        <td id="LC458" class="blob-code blob-code-inner js-file-line">                                                        <span class="pl-k">else</span> <span class="pl-k">if</span>(<span class="pl-c1">isdigit</span>(c))</td>
+        <td id="LC458" class="blob-code blob-code-inner js-file-line">	<span class="pl-k">double</span> templ=<span class="pl-c1">0</span>, tempk=<span class="pl-c1">0</span>, clstpts=<span class="pl-c1">0</span>;</td>
       </tr>
       <tr>
         <td id="L459" class="blob-num js-line-number" data-line-number="459"></td>
-        <td id="LC459" class="blob-code blob-code-inner js-file-line">                                                        {</td>
+        <td id="LC459" class="blob-code blob-code-inner js-file-line">	<span class="pl-k">char</span> c;</td>
       </tr>
       <tr>
         <td id="L460" class="blob-num js-line-number" data-line-number="460"></td>
-        <td id="LC460" class="blob-code blob-code-inner js-file-line">                                                                templ= templ*<span class="pl-c1">10</span>;</td>
+        <td id="LC460" class="blob-code blob-code-inner js-file-line">	<span class="pl-k">while</span>( (c= cluster[j]) != <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\0</span><span class="pl-pds">&#39;</span></span>)</td>
       </tr>
       <tr>
         <td id="L461" class="blob-num js-line-number" data-line-number="461"></td>
-        <td id="LC461" class="blob-code blob-code-inner js-file-line">                                                                templ= templ + ((<span class="pl-k">double</span>)c - <span class="pl-s"><span class="pl-pds">&#39;</span>0<span class="pl-pds">&#39;</span></span>);</td>
+        <td id="LC461" class="blob-code blob-code-inner js-file-line">                        {</td>
       </tr>
       <tr>
         <td id="L462" class="blob-num js-line-number" data-line-number="462"></td>
-        <td id="LC462" class="blob-code blob-code-inner js-file-line">                                                        }</td>
+        <td id="LC462" class="blob-code blob-code-inner js-file-line">                                <span class="pl-k">if</span>(c==<span class="pl-s"><span class="pl-pds">&#39;</span>_<span class="pl-pds">&#39;</span></span>)</td>
       </tr>
       <tr>
         <td id="L463" class="blob-num js-line-number" data-line-number="463"></td>
-        <td id="LC463" class="blob-code blob-code-inner js-file-line">                                                        <span class="pl-k">else</span></td>
+        <td id="LC463" class="blob-code blob-code-inner js-file-line">                                {</td>
       </tr>
       <tr>
         <td id="L464" class="blob-num js-line-number" data-line-number="464"></td>
-        <td id="LC464" class="blob-code blob-code-inner js-file-line">                                                                <span class="pl-k">break</span>;</td>
+        <td id="LC464" class="blob-code blob-code-inner js-file-line">                                        b++;</td>
       </tr>
       <tr>
         <td id="L465" class="blob-num js-line-number" data-line-number="465"></td>
-        <td id="LC465" class="blob-code blob-code-inner js-file-line">                                                }</td>
+        <td id="LC465" class="blob-code blob-code-inner js-file-line">                                        j++;</td>
       </tr>
       <tr>
         <td id="L466" class="blob-num js-line-number" data-line-number="466"></td>
-        <td id="LC466" class="blob-code blob-code-inner js-file-line">                                        }</td>
+        <td id="LC466" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">//</span>                                      printf(&quot;j=_ %d\n&quot;,j);           //debugging</span></td>
       </tr>
       <tr>
         <td id="L467" class="blob-num js-line-number" data-line-number="467"></td>
-        <td id="LC467" class="blob-code blob-code-inner js-file-line">                                        <span class="pl-k">else</span> <span class="pl-k">if</span>(b==<span class="pl-c1">2</span>)</td>
+        <td id="LC467" class="blob-code blob-code-inner js-file-line">                                }</td>
       </tr>
       <tr>
         <td id="L468" class="blob-num js-line-number" data-line-number="468"></td>
-        <td id="LC468" class="blob-code blob-code-inner js-file-line">                                        {</td>
+        <td id="LC468" class="blob-code blob-code-inner js-file-line">                                <span class="pl-k">else</span> <span class="pl-k">if</span>(<span class="pl-c1">isalpha</span>(c))</td>
       </tr>
       <tr>
         <td id="L469" class="blob-num js-line-number" data-line-number="469"></td>
-        <td id="LC469" class="blob-code blob-code-inner js-file-line">                                                clstpts= (<span class="pl-k">double</span>)c - <span class="pl-s"><span class="pl-pds">&#39;</span>0<span class="pl-pds">&#39;</span></span>;</td>
+        <td id="LC469" class="blob-code blob-code-inner js-file-line">                                {</td>
       </tr>
       <tr>
         <td id="L470" class="blob-num js-line-number" data-line-number="470"></td>
-        <td id="LC470" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">//</span>                                              printf(&quot;templ= %.2lf\n&quot;,templ);         //debugging</span></td>
+        <td id="LC470" class="blob-code blob-code-inner js-file-line">                                        j++;</td>
       </tr>
       <tr>
         <td id="L471" class="blob-num js-line-number" data-line-number="471"></td>
-        <td id="LC471" class="blob-code blob-code-inner js-file-line">                                                <span class="pl-c"><span class="pl-c">//</span>need recursion here xx.xx</span></td>
+        <td id="LC471" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">//</span>                                      printf(&quot;j= %d\n&quot;,j);            //debugging</span></td>
       </tr>
       <tr>
         <td id="L472" class="blob-num js-line-number" data-line-number="472"></td>
-        <td id="LC472" class="blob-code blob-code-inner js-file-line">                                                <span class="pl-k">while</span> ((c= cluster[++j]) != <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\0</span><span class="pl-pds">&#39;</span></span>)</td>
+        <td id="LC472" class="blob-code blob-code-inner js-file-line">                                }</td>
       </tr>
       <tr>
         <td id="L473" class="blob-num js-line-number" data-line-number="473"></td>
-        <td id="LC473" class="blob-code blob-code-inner js-file-line">                                                {</td>
+        <td id="LC473" class="blob-code blob-code-inner js-file-line">                                <span class="pl-k">else</span> <span class="pl-k">if</span>(<span class="pl-c1">isdigit</span>(c))</td>
       </tr>
       <tr>
         <td id="L474" class="blob-num js-line-number" data-line-number="474"></td>
-        <td id="LC474" class="blob-code blob-code-inner js-file-line">                                                        <span class="pl-k">if</span>(<span class="pl-c1">isalpha</span>(c))</td>
+        <td id="LC474" class="blob-code blob-code-inner js-file-line">                                {</td>
       </tr>
       <tr>
         <td id="L475" class="blob-num js-line-number" data-line-number="475"></td>
-        <td id="LC475" class="blob-code blob-code-inner js-file-line">                                                        {</td>
+        <td id="LC475" class="blob-code blob-code-inner js-file-line">                                        <span class="pl-k">if</span>(b==<span class="pl-c1">0</span>)</td>
       </tr>
       <tr>
         <td id="L476" class="blob-num js-line-number" data-line-number="476"></td>
-        <td id="LC476" class="blob-code blob-code-inner js-file-line">                                                                <span class="pl-c1">puts</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>wrong file format-&gt; dd_ddfilename_dd<span class="pl-pds">&quot;</span></span>);</td>
+        <td id="LC476" class="blob-code blob-code-inner js-file-line">                                        {</td>
       </tr>
       <tr>
         <td id="L477" class="blob-num js-line-number" data-line-number="477"></td>
-        <td id="LC477" class="blob-code blob-code-inner js-file-line">                                                                <span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>j= <span class="pl-c1">%d</span> b= <span class="pl-c1">%d</span><span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>,j,b);</td>
+        <td id="LC477" class="blob-code blob-code-inner js-file-line">                                                tempk= (<span class="pl-k">double</span>)c - <span class="pl-s"><span class="pl-pds">&#39;</span>0<span class="pl-pds">&#39;</span></span>;</td>
       </tr>
       <tr>
         <td id="L478" class="blob-num js-line-number" data-line-number="478"></td>
-        <td id="LC478" class="blob-code blob-code-inner js-file-line">                                                                <span class="pl-k">break</span>;</td>
+        <td id="LC478" class="blob-code blob-code-inner js-file-line">                                                <span class="pl-c"><span class="pl-c">//</span>need recursion here xx.xx</span></td>
       </tr>
       <tr>
         <td id="L479" class="blob-num js-line-number" data-line-number="479"></td>
-        <td id="LC479" class="blob-code blob-code-inner js-file-line">                                                        }</td>
+        <td id="LC479" class="blob-code blob-code-inner js-file-line">                                                <span class="pl-k">while</span> ((c= cluster[++j]) != <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\0</span><span class="pl-pds">&#39;</span></span>)</td>
       </tr>
       <tr>
         <td id="L480" class="blob-num js-line-number" data-line-number="480"></td>
-        <td id="LC480" class="blob-code blob-code-inner js-file-line">                                                        <span class="pl-k">else</span> <span class="pl-k">if</span>(<span class="pl-c1">isdigit</span>(c))</td>
+        <td id="LC480" class="blob-code blob-code-inner js-file-line">                                                {</td>
       </tr>
       <tr>
         <td id="L481" class="blob-num js-line-number" data-line-number="481"></td>
-        <td id="LC481" class="blob-code blob-code-inner js-file-line">                                                        {</td>
+        <td id="LC481" class="blob-code blob-code-inner js-file-line">                                                        <span class="pl-k">if</span>(c==<span class="pl-s"><span class="pl-pds">&#39;</span>_<span class="pl-pds">&#39;</span></span>)</td>
       </tr>
       <tr>
         <td id="L482" class="blob-num js-line-number" data-line-number="482"></td>
-        <td id="LC482" class="blob-code blob-code-inner js-file-line">                                                                clstpts= clstpts*<span class="pl-c1">10</span>;</td>
+        <td id="LC482" class="blob-code blob-code-inner js-file-line">                                                        {</td>
       </tr>
       <tr>
         <td id="L483" class="blob-num js-line-number" data-line-number="483"></td>
-        <td id="LC483" class="blob-code blob-code-inner js-file-line">                                                                clstpts= clstpts + ((<span class="pl-k">double</span>)c - <span class="pl-s"><span class="pl-pds">&#39;</span>0<span class="pl-pds">&#39;</span></span>);</td>
+        <td id="LC483" class="blob-code blob-code-inner js-file-line">                                                                b++;</td>
       </tr>
       <tr>
         <td id="L484" class="blob-num js-line-number" data-line-number="484"></td>
-        <td id="LC484" class="blob-code blob-code-inner js-file-line">                                                        }</td>
+        <td id="LC484" class="blob-code blob-code-inner js-file-line">                                                                j++;</td>
       </tr>
       <tr>
         <td id="L485" class="blob-num js-line-number" data-line-number="485"></td>
-        <td id="LC485" class="blob-code blob-code-inner js-file-line">                                                        <span class="pl-k">else</span></td>
+        <td id="LC485" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">//</span>                                                              printf(&quot;j=__ %d b= %d\n&quot;,j,b);          //debugging</span></td>
       </tr>
       <tr>
         <td id="L486" class="blob-num js-line-number" data-line-number="486"></td>
@@ -2641,76 +2643,362 @@
       </tr>
       <tr>
         <td id="L487" class="blob-num js-line-number" data-line-number="487"></td>
-        <td id="LC487" class="blob-code blob-code-inner js-file-line">                                                }</td>
+        <td id="LC487" class="blob-code blob-code-inner js-file-line">                                                        }</td>
       </tr>
       <tr>
         <td id="L488" class="blob-num js-line-number" data-line-number="488"></td>
-        <td id="LC488" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC488" class="blob-code blob-code-inner js-file-line">                                                        <span class="pl-k">else</span> <span class="pl-k">if</span>(<span class="pl-c1">isalpha</span>(c))</td>
       </tr>
       <tr>
         <td id="L489" class="blob-num js-line-number" data-line-number="489"></td>
-        <td id="LC489" class="blob-code blob-code-inner js-file-line">                                        }</td>
+        <td id="LC489" class="blob-code blob-code-inner js-file-line">                                                        {</td>
       </tr>
       <tr>
         <td id="L490" class="blob-num js-line-number" data-line-number="490"></td>
-        <td id="LC490" class="blob-code blob-code-inner js-file-line">                                        <span class="pl-k">else</span></td>
+        <td id="LC490" class="blob-code blob-code-inner js-file-line">                                                                <span class="pl-c1">puts</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>wrong file format-&gt; dd_ddfilename_dd<span class="pl-pds">&quot;</span></span>);</td>
       </tr>
       <tr>
         <td id="L491" class="blob-num js-line-number" data-line-number="491"></td>
-        <td id="LC491" class="blob-code blob-code-inner js-file-line">                                        {</td>
+        <td id="LC491" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">//</span>                                                              printf(&quot;b= %d\n&quot;,b);            //debugging</span></td>
       </tr>
       <tr>
         <td id="L492" class="blob-num js-line-number" data-line-number="492"></td>
-        <td id="LC492" class="blob-code blob-code-inner js-file-line">                                                <span class="pl-c1">puts</span>(<span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span>);</td>
+        <td id="LC492" class="blob-code blob-code-inner js-file-line">                                                                <span class="pl-k">break</span>;</td>
       </tr>
       <tr>
         <td id="L493" class="blob-num js-line-number" data-line-number="493"></td>
-        <td id="LC493" class="blob-code blob-code-inner js-file-line">                                                <span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>j= <span class="pl-c1">%d</span> b= <span class="pl-c1">%d</span><span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>,j,b);</td>
+        <td id="LC493" class="blob-code blob-code-inner js-file-line">                                                        }</td>
       </tr>
       <tr>
         <td id="L494" class="blob-num js-line-number" data-line-number="494"></td>
-        <td id="LC494" class="blob-code blob-code-inner js-file-line">						         j++;</td>
+        <td id="LC494" class="blob-code blob-code-inner js-file-line">                                                        <span class="pl-k">else</span> <span class="pl-k">if</span>(<span class="pl-c1">isdigit</span>(c))</td>
       </tr>
       <tr>
         <td id="L495" class="blob-num js-line-number" data-line-number="495"></td>
-        <td id="LC495" class="blob-code blob-code-inner js-file-line">                                        }</td>
+        <td id="LC495" class="blob-code blob-code-inner js-file-line">                                                        {</td>
       </tr>
       <tr>
         <td id="L496" class="blob-num js-line-number" data-line-number="496"></td>
-        <td id="LC496" class="blob-code blob-code-inner js-file-line">                                }</td>
+        <td id="LC496" class="blob-code blob-code-inner js-file-line">                                                                tempk= tempk*<span class="pl-c1">10</span>;</td>
       </tr>
       <tr>
         <td id="L497" class="blob-num js-line-number" data-line-number="497"></td>
-        <td id="LC497" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">//</span>                              printf(&quot;# of Points= %0.2lf\n&quot;,templ);          //debugging</span></td>
+        <td id="LC497" class="blob-code blob-code-inner js-file-line">                                                                tempk= tempk + ((<span class="pl-k">double</span>)c - <span class="pl-s"><span class="pl-pds">&#39;</span>0<span class="pl-pds">&#39;</span></span>);</td>
       </tr>
       <tr>
         <td id="L498" class="blob-num js-line-number" data-line-number="498"></td>
-        <td id="LC498" class="blob-code blob-code-inner js-file-line">                        }</td>
+        <td id="LC498" class="blob-code blob-code-inner js-file-line">                                                        }</td>
       </tr>
       <tr>
         <td id="L499" class="blob-num js-line-number" data-line-number="499"></td>
-        <td id="LC499" class="blob-code blob-code-inner js-file-line">			*values = tempk;</td>
+        <td id="LC499" class="blob-code blob-code-inner js-file-line">                                                        <span class="pl-k">else</span></td>
       </tr>
       <tr>
         <td id="L500" class="blob-num js-line-number" data-line-number="500"></td>
-        <td id="LC500" class="blob-code blob-code-inner js-file-line">			values++;</td>
+        <td id="LC500" class="blob-code blob-code-inner js-file-line">                                                                <span class="pl-k">break</span>;</td>
       </tr>
       <tr>
         <td id="L501" class="blob-num js-line-number" data-line-number="501"></td>
-        <td id="LC501" class="blob-code blob-code-inner js-file-line">			*values = templ;</td>
+        <td id="LC501" class="blob-code blob-code-inner js-file-line">                                                }</td>
       </tr>
       <tr>
         <td id="L502" class="blob-num js-line-number" data-line-number="502"></td>
-        <td id="LC502" class="blob-code blob-code-inner js-file-line">			values++;</td>
+        <td id="LC502" class="blob-code blob-code-inner js-file-line">
+</td>
       </tr>
       <tr>
         <td id="L503" class="blob-num js-line-number" data-line-number="503"></td>
-        <td id="LC503" class="blob-code blob-code-inner js-file-line">			*values = clstpts;</td>
+        <td id="LC503" class="blob-code blob-code-inner js-file-line">                                        }</td>
       </tr>
       <tr>
         <td id="L504" class="blob-num js-line-number" data-line-number="504"></td>
-        <td id="LC504" class="blob-code blob-code-inner js-file-line">}</td>
+        <td id="LC504" class="blob-code blob-code-inner js-file-line">                                        <span class="pl-k">else</span> <span class="pl-k">if</span>(b==<span class="pl-c1">1</span>)</td>
+      </tr>
+      <tr>
+        <td id="L505" class="blob-num js-line-number" data-line-number="505"></td>
+        <td id="LC505" class="blob-code blob-code-inner js-file-line">                                        {</td>
+      </tr>
+      <tr>
+        <td id="L506" class="blob-num js-line-number" data-line-number="506"></td>
+        <td id="LC506" class="blob-code blob-code-inner js-file-line">						templ= (<span class="pl-k">double</span>)c - <span class="pl-s"><span class="pl-pds">&#39;</span>0<span class="pl-pds">&#39;</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L507" class="blob-num js-line-number" data-line-number="507"></td>
+        <td id="LC507" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">//</span>                                              printf(&quot;templ= %.2lf\n&quot;,templ);         //debugging</span></td>
+      </tr>
+      <tr>
+        <td id="L508" class="blob-num js-line-number" data-line-number="508"></td>
+        <td id="LC508" class="blob-code blob-code-inner js-file-line">                                                <span class="pl-c"><span class="pl-c">//</span>need recursion here xx.xx</span></td>
+      </tr>
+      <tr>
+        <td id="L509" class="blob-num js-line-number" data-line-number="509"></td>
+        <td id="LC509" class="blob-code blob-code-inner js-file-line">                                                <span class="pl-k">while</span> ((c= cluster[++j]) != <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\0</span><span class="pl-pds">&#39;</span></span>)</td>
+      </tr>
+      <tr>
+        <td id="L510" class="blob-num js-line-number" data-line-number="510"></td>
+        <td id="LC510" class="blob-code blob-code-inner js-file-line">                                                {</td>
+      </tr>
+      <tr>
+        <td id="L511" class="blob-num js-line-number" data-line-number="511"></td>
+        <td id="LC511" class="blob-code blob-code-inner js-file-line">                                                        <span class="pl-k">if</span>(<span class="pl-c1">isalpha</span>(c))</td>
+      </tr>
+      <tr>
+        <td id="L512" class="blob-num js-line-number" data-line-number="512"></td>
+        <td id="LC512" class="blob-code blob-code-inner js-file-line">                                                        {</td>
+      </tr>
+      <tr>
+        <td id="L513" class="blob-num js-line-number" data-line-number="513"></td>
+        <td id="LC513" class="blob-code blob-code-inner js-file-line">                                                                <span class="pl-k">break</span>;</td>
+      </tr>
+      <tr>
+        <td id="L514" class="blob-num js-line-number" data-line-number="514"></td>
+        <td id="LC514" class="blob-code blob-code-inner js-file-line">                                                        }</td>
+      </tr>
+      <tr>
+        <td id="L515" class="blob-num js-line-number" data-line-number="515"></td>
+        <td id="LC515" class="blob-code blob-code-inner js-file-line">                                                        <span class="pl-k">else</span> <span class="pl-k">if</span>(<span class="pl-c1">isdigit</span>(c))</td>
+      </tr>
+      <tr>
+        <td id="L516" class="blob-num js-line-number" data-line-number="516"></td>
+        <td id="LC516" class="blob-code blob-code-inner js-file-line">                                                        {</td>
+      </tr>
+      <tr>
+        <td id="L517" class="blob-num js-line-number" data-line-number="517"></td>
+        <td id="LC517" class="blob-code blob-code-inner js-file-line">                                                                templ= templ*<span class="pl-c1">10</span>;</td>
+      </tr>
+      <tr>
+        <td id="L518" class="blob-num js-line-number" data-line-number="518"></td>
+        <td id="LC518" class="blob-code blob-code-inner js-file-line">                                                                templ= templ + ((<span class="pl-k">double</span>)c - <span class="pl-s"><span class="pl-pds">&#39;</span>0<span class="pl-pds">&#39;</span></span>);</td>
+      </tr>
+      <tr>
+        <td id="L519" class="blob-num js-line-number" data-line-number="519"></td>
+        <td id="LC519" class="blob-code blob-code-inner js-file-line">                                                        }</td>
+      </tr>
+      <tr>
+        <td id="L520" class="blob-num js-line-number" data-line-number="520"></td>
+        <td id="LC520" class="blob-code blob-code-inner js-file-line">                                                        <span class="pl-k">else</span></td>
+      </tr>
+      <tr>
+        <td id="L521" class="blob-num js-line-number" data-line-number="521"></td>
+        <td id="LC521" class="blob-code blob-code-inner js-file-line">                                                                <span class="pl-k">break</span>;</td>
+      </tr>
+      <tr>
+        <td id="L522" class="blob-num js-line-number" data-line-number="522"></td>
+        <td id="LC522" class="blob-code blob-code-inner js-file-line">                                                }</td>
+      </tr>
+      <tr>
+        <td id="L523" class="blob-num js-line-number" data-line-number="523"></td>
+        <td id="LC523" class="blob-code blob-code-inner js-file-line">                                        }</td>
+      </tr>
+      <tr>
+        <td id="L524" class="blob-num js-line-number" data-line-number="524"></td>
+        <td id="LC524" class="blob-code blob-code-inner js-file-line">                                        <span class="pl-k">else</span> <span class="pl-k">if</span>(b==<span class="pl-c1">2</span>)</td>
+      </tr>
+      <tr>
+        <td id="L525" class="blob-num js-line-number" data-line-number="525"></td>
+        <td id="LC525" class="blob-code blob-code-inner js-file-line">                                        {</td>
+      </tr>
+      <tr>
+        <td id="L526" class="blob-num js-line-number" data-line-number="526"></td>
+        <td id="LC526" class="blob-code blob-code-inner js-file-line">                                                clstpts= (<span class="pl-k">double</span>)c - <span class="pl-s"><span class="pl-pds">&#39;</span>0<span class="pl-pds">&#39;</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L527" class="blob-num js-line-number" data-line-number="527"></td>
+        <td id="LC527" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">//</span>                                              printf(&quot;templ= %.2lf\n&quot;,templ);         //debugging</span></td>
+      </tr>
+      <tr>
+        <td id="L528" class="blob-num js-line-number" data-line-number="528"></td>
+        <td id="LC528" class="blob-code blob-code-inner js-file-line">                                                <span class="pl-c"><span class="pl-c">//</span>need recursion here xx.xx</span></td>
+      </tr>
+      <tr>
+        <td id="L529" class="blob-num js-line-number" data-line-number="529"></td>
+        <td id="LC529" class="blob-code blob-code-inner js-file-line">                                                <span class="pl-k">while</span> ((c= cluster[++j]) != <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-cce">\0</span><span class="pl-pds">&#39;</span></span>)</td>
+      </tr>
+      <tr>
+        <td id="L530" class="blob-num js-line-number" data-line-number="530"></td>
+        <td id="LC530" class="blob-code blob-code-inner js-file-line">                                                {</td>
+      </tr>
+      <tr>
+        <td id="L531" class="blob-num js-line-number" data-line-number="531"></td>
+        <td id="LC531" class="blob-code blob-code-inner js-file-line">                                                        <span class="pl-k">if</span>(<span class="pl-c1">isalpha</span>(c))</td>
+      </tr>
+      <tr>
+        <td id="L532" class="blob-num js-line-number" data-line-number="532"></td>
+        <td id="LC532" class="blob-code blob-code-inner js-file-line">                                                        {</td>
+      </tr>
+      <tr>
+        <td id="L533" class="blob-num js-line-number" data-line-number="533"></td>
+        <td id="LC533" class="blob-code blob-code-inner js-file-line">                                                                <span class="pl-c1">puts</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>wrong file format-&gt; dd_ddfilename_dd<span class="pl-pds">&quot;</span></span>);</td>
+      </tr>
+      <tr>
+        <td id="L534" class="blob-num js-line-number" data-line-number="534"></td>
+        <td id="LC534" class="blob-code blob-code-inner js-file-line">                                                                <span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>j= <span class="pl-c1">%d</span> b= <span class="pl-c1">%d</span><span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>,j,b);</td>
+      </tr>
+      <tr>
+        <td id="L535" class="blob-num js-line-number" data-line-number="535"></td>
+        <td id="LC535" class="blob-code blob-code-inner js-file-line">                                                                <span class="pl-k">break</span>;</td>
+      </tr>
+      <tr>
+        <td id="L536" class="blob-num js-line-number" data-line-number="536"></td>
+        <td id="LC536" class="blob-code blob-code-inner js-file-line">                                                        }</td>
+      </tr>
+      <tr>
+        <td id="L537" class="blob-num js-line-number" data-line-number="537"></td>
+        <td id="LC537" class="blob-code blob-code-inner js-file-line">                                                        <span class="pl-k">else</span> <span class="pl-k">if</span>(<span class="pl-c1">isdigit</span>(c))</td>
+      </tr>
+      <tr>
+        <td id="L538" class="blob-num js-line-number" data-line-number="538"></td>
+        <td id="LC538" class="blob-code blob-code-inner js-file-line">                                                        {</td>
+      </tr>
+      <tr>
+        <td id="L539" class="blob-num js-line-number" data-line-number="539"></td>
+        <td id="LC539" class="blob-code blob-code-inner js-file-line">                                                                clstpts= clstpts*<span class="pl-c1">10</span>;</td>
+      </tr>
+      <tr>
+        <td id="L540" class="blob-num js-line-number" data-line-number="540"></td>
+        <td id="LC540" class="blob-code blob-code-inner js-file-line">                                                                clstpts= clstpts + ((<span class="pl-k">double</span>)c - <span class="pl-s"><span class="pl-pds">&#39;</span>0<span class="pl-pds">&#39;</span></span>);</td>
+      </tr>
+      <tr>
+        <td id="L541" class="blob-num js-line-number" data-line-number="541"></td>
+        <td id="LC541" class="blob-code blob-code-inner js-file-line">                                                        }</td>
+      </tr>
+      <tr>
+        <td id="L542" class="blob-num js-line-number" data-line-number="542"></td>
+        <td id="LC542" class="blob-code blob-code-inner js-file-line">                                                        <span class="pl-k">else</span></td>
+      </tr>
+      <tr>
+        <td id="L543" class="blob-num js-line-number" data-line-number="543"></td>
+        <td id="LC543" class="blob-code blob-code-inner js-file-line">                                                                <span class="pl-k">break</span>;</td>
+      </tr>
+      <tr>
+        <td id="L544" class="blob-num js-line-number" data-line-number="544"></td>
+        <td id="LC544" class="blob-code blob-code-inner js-file-line">                                                }</td>
+      </tr>
+      <tr>
+        <td id="L545" class="blob-num js-line-number" data-line-number="545"></td>
+        <td id="LC545" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L546" class="blob-num js-line-number" data-line-number="546"></td>
+        <td id="LC546" class="blob-code blob-code-inner js-file-line">                                        }</td>
+      </tr>
+      <tr>
+        <td id="L547" class="blob-num js-line-number" data-line-number="547"></td>
+        <td id="LC547" class="blob-code blob-code-inner js-file-line">                                        <span class="pl-k">else</span></td>
+      </tr>
+      <tr>
+        <td id="L548" class="blob-num js-line-number" data-line-number="548"></td>
+        <td id="LC548" class="blob-code blob-code-inner js-file-line">                                        {</td>
+      </tr>
+      <tr>
+        <td id="L549" class="blob-num js-line-number" data-line-number="549"></td>
+        <td id="LC549" class="blob-code blob-code-inner js-file-line">                                                <span class="pl-c1">puts</span>(<span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span>);</td>
+      </tr>
+      <tr>
+        <td id="L550" class="blob-num js-line-number" data-line-number="550"></td>
+        <td id="LC550" class="blob-code blob-code-inner js-file-line">                                                <span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>j= <span class="pl-c1">%d</span> b= <span class="pl-c1">%d</span><span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>,j,b);</td>
+      </tr>
+      <tr>
+        <td id="L551" class="blob-num js-line-number" data-line-number="551"></td>
+        <td id="LC551" class="blob-code blob-code-inner js-file-line">						         j++;</td>
+      </tr>
+      <tr>
+        <td id="L552" class="blob-num js-line-number" data-line-number="552"></td>
+        <td id="LC552" class="blob-code blob-code-inner js-file-line">                                        }</td>
+      </tr>
+      <tr>
+        <td id="L553" class="blob-num js-line-number" data-line-number="553"></td>
+        <td id="LC553" class="blob-code blob-code-inner js-file-line">                                }</td>
+      </tr>
+      <tr>
+        <td id="L554" class="blob-num js-line-number" data-line-number="554"></td>
+        <td id="LC554" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">//</span>                              printf(&quot;# of Points= %0.2lf\n&quot;,templ);          //debugging</span></td>
+      </tr>
+      <tr>
+        <td id="L555" class="blob-num js-line-number" data-line-number="555"></td>
+        <td id="LC555" class="blob-code blob-code-inner js-file-line">                        }</td>
+      </tr>
+      <tr>
+        <td id="L556" class="blob-num js-line-number" data-line-number="556"></td>
+        <td id="LC556" class="blob-code blob-code-inner js-file-line">			*values = tempk;</td>
+      </tr>
+      <tr>
+        <td id="L557" class="blob-num js-line-number" data-line-number="557"></td>
+        <td id="LC557" class="blob-code blob-code-inner js-file-line">			values++;</td>
+      </tr>
+      <tr>
+        <td id="L558" class="blob-num js-line-number" data-line-number="558"></td>
+        <td id="LC558" class="blob-code blob-code-inner js-file-line">			*values = templ;</td>
+      </tr>
+      <tr>
+        <td id="L559" class="blob-num js-line-number" data-line-number="559"></td>
+        <td id="LC559" class="blob-code blob-code-inner js-file-line">			values++;</td>
+      </tr>
+      <tr>
+        <td id="L560" class="blob-num js-line-number" data-line-number="560"></td>
+        <td id="LC560" class="blob-code blob-code-inner js-file-line">			*values = clstpts;</td>
+      </tr>
+      <tr>
+        <td id="L561" class="blob-num js-line-number" data-line-number="561"></td>
+        <td id="LC561" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="L562" class="blob-num js-line-number" data-line-number="562"></td>
+        <td id="LC562" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L563" class="blob-num js-line-number" data-line-number="563"></td>
+        <td id="LC563" class="blob-code blob-code-inner js-file-line"><span class="pl-k">void</span> <span class="pl-en">appendFile</span>(<span class="pl-k">char</span> fileA[<span class="pl-c1">100</span>], <span class="pl-k">char</span> fileB[<span class="pl-c1">100</span>])</td>
+      </tr>
+      <tr>
+        <td id="L564" class="blob-num js-line-number" data-line-number="564"></td>
+        <td id="LC564" class="blob-code blob-code-inner js-file-line">{</td>
+      </tr>
+      <tr>
+        <td id="L565" class="blob-num js-line-number" data-line-number="565"></td>
+        <td id="LC565" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>Starting system call<span class="pl-pds">&quot;</span></span>);	</td>
+      </tr>
+      <tr>
+        <td id="L566" class="blob-num js-line-number" data-line-number="566"></td>
+        <td id="LC566" class="blob-code blob-code-inner js-file-line">	<span class="pl-k">char</span> systemCall[<span class="pl-c1">255</span>];</td>
+      </tr>
+      <tr>
+        <td id="L567" class="blob-num js-line-number" data-line-number="567"></td>
+        <td id="LC567" class="blob-code blob-code-inner js-file-line">	<span class="pl-k">char</span> commands[<span class="pl-c1">10</span>]=<span class="pl-s"><span class="pl-pds">&quot;</span>cat <span class="pl-pds">&quot;</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L568" class="blob-num js-line-number" data-line-number="568"></td>
+        <td id="LC568" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">strcat</span>(systemCall,commands);</td>
+      </tr>
+      <tr>
+        <td id="L569" class="blob-num js-line-number" data-line-number="569"></td>
+        <td id="LC569" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">strcat</span>(systemCall,fileA);</td>
+      </tr>
+      <tr>
+        <td id="L570" class="blob-num js-line-number" data-line-number="570"></td>
+        <td id="LC570" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">strcpy</span>(commands,<span class="pl-s"><span class="pl-pds">&quot;</span> &gt;&gt; <span class="pl-pds">&quot;</span></span>);</td>
+      </tr>
+      <tr>
+        <td id="L571" class="blob-num js-line-number" data-line-number="571"></td>
+        <td id="LC571" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">strcat</span>(systemCall,commands);</td>
+      </tr>
+      <tr>
+        <td id="L572" class="blob-num js-line-number" data-line-number="572"></td>
+        <td id="LC572" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">strcat</span>(systemCall,fileB);</td>
+      </tr>
+      <tr>
+        <td id="L573" class="blob-num js-line-number" data-line-number="573"></td>
+        <td id="LC573" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-c1">%s</span><span class="pl-cce">\n</span><span class="pl-pds">&quot;</span></span>,systemCall);</td>
+      </tr>
+      <tr>
+        <td id="L574" class="blob-num js-line-number" data-line-number="574"></td>
+        <td id="LC574" class="blob-code blob-code-inner js-file-line">	<span class="pl-c1">system</span>(systemCall);</td>
+      </tr>
+      <tr>
+        <td id="L575" class="blob-num js-line-number" data-line-number="575"></td>
+        <td id="LC575" class="blob-code blob-code-inner js-file-line">}</td>
       </tr>
 </table>
 
@@ -2722,7 +3010,7 @@
       <ul class="BlobToolbar-dropdown dropdown-menu dropdown-menu-se mt-2">
         <li><a class="js-zeroclipboard dropdown-item" style="cursor:pointer;" id="js-copy-lines" data-original-text="Copy lines">Copy lines</a></li>
         <li><a class="js-zeroclipboard dropdown-item" id= "js-copy-permalink" style="cursor:pointer;" data-original-text="Copy permalink">Copy permalink</a></li>
-        <li><a class="dropdown-item js-update-url-with-hash" id="js-view-git-blame" href="/vectorniner/dbscn/blame/fa6dbca2cbf38b78625f9712838b4d667f34248b/dbmtcanv17.c">View git blame</a></li>
+        <li><a class="dropdown-item js-update-url-with-hash" id="js-view-git-blame" href="/vectorniner/dbscn/blame/fa6dbca2cbf38b78625f9712838b4d667f34248b/dbmtcanv18.c">View git blame</a></li>
           <li><a class="dropdown-item" id="js-new-issue" href="/vectorniner/dbscn/issues/new">Open new issue</a></li>
       </ul>
     </div>
@@ -2753,7 +3041,7 @@
 <div class="footer container-lg px-3" role="contentinfo">
   <div class="position-relative d-flex flex-justify-between py-6 mt-6 f6 text-gray border-top border-gray-light ">
     <ul class="list-style-none d-flex flex-wrap ">
-      <li class="mr-3">&copy; 2018 <span title="0.35465s from unicorn-1337758491-dlrzz">GitHub</span>, Inc.</li>
+      <li class="mr-3">&copy; 2018 <span title="0.29219s from unicorn-2109641499-t65kt">GitHub</span>, Inc.</li>
         <li class="mr-3"><a href="https://help.github.com/articles/github-terms-of-service/" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
         <li class="mr-3"><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
         <li class="mr-3"><a href="https://help.github.com/articles/github-security/" data-ga-click="Footer, go to security, text:security">Security</a></li>
